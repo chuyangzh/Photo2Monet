@@ -1,0 +1,5 @@
+.virtual_documents/
+.config/
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]  # This ignores all .pyc, .pyo, and .pyd files
