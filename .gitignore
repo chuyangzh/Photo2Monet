@@ -1,3 +1,8 @@
+monet_jpg.zip
+photo_jpg.zip
+monet_jpg/
+photo_jpg/
+
 .virtual_documents/
 .config/
 .ipynb_checkpoints/
@@ -13,10 +18,3 @@ __pycache__/
 
 
 
-# Ignore specific zip files
-monet_jpg.zip
-photo_jpg.zip
-
-# Ignore directories
-monet_jpg/
-photo_jpg/
