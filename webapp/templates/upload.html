@@ -1,0 +1,26 @@
+<!-- templates/upload.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Image</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload an Image to Transform</h1>
+        <form id="uploadForm" method="post" enctype="multipart/form-data" action="/upload">
+            <input type="file" id="fileInput" name="file" accept="image/png, image/jpeg">
+            <button type="submit">Upload</button>
+        </form>
+        <div id="loading" style="display:none;">Processing...</div>
+        <div id="error" style="display:none; color: red;"></div>
+        <div id="result">
+            <img id="transformedImage" src="#" alt="Transformed Image" style="display:none;">
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+
