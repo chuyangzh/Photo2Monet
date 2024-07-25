@@ -3,3 +3,12 @@
 .ipynb_checkpoints/
 __pycache__/
 *.py[cod]  # This ignores all .pyc, .pyo, and .pyd files
+
+
+# Ignore specific zip files
+monet_jpg.zip
+photo_jpg.zip
+
+# Ignore directories
+monet_jpg/
+photo_jpg/
