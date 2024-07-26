@@ -1,4 +1,4 @@
-Photo to Monet with CycleGAN 
+Photo to Monet with CycleGAN 📷🎨
 ================================================
 
 Overview
