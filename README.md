@@ -48,6 +48,9 @@ Project Setup
 -   **Access the Jupyter Notebook**: Access the Jupyter Notebook through `localhost:8888` to interact with the project directly.
         ![/path/to/image.png](https://github.com/chuyangzh/Photo2Monet/blob/main/notebook_asset/jupyter_lab_container.png?raw=true)
 
+-   **Experiment with different Hyperparameters to train the model**
+    ![/path/to/image.png](https://github.com/chuyangzh/Photo2Monet/blob/main/notebook_asset/notebook_training_output.png?raw=true)
+
  
   
   ### Setting Up the Web Application
