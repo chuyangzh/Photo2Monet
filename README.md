@@ -42,6 +42,7 @@ Project Setup
         `docker build -t custom_photo2monet_image .`
 
         This command builds a Docker image using the Dockerfile that adjusts the environment to support the newer GPU architectures.
+        ![/path/to/image.png](https://github.com/chuyangzh/Photo2Monet/blob/main/notebook_asset/sm_86.png?raw=true)
         ![/path/to/image.png](https://github.com/chuyangzh/Photo2Monet/blob/main/notebook_asset/sm_86_support.png?raw=true)
 
 -   **Access the Jupyter Notebook**: Access the Jupyter Notebook through `localhost:8888` to interact with the project directly.
