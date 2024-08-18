@@ -61,7 +61,8 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Copy the model file into the container at /app/models
-COPY serving_model_v0.pth /app/models/serving_model_v0.pth
+# COPY serving_model_v0.pth /app/models/serving_model_v0.pth
+# Remove the line that copies the model into the container
 
 # Copy the current directory contents into the container at /app
 COPY . /app/
