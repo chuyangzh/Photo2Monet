@@ -96,7 +96,9 @@ transform = transforms.Compose([
 
 def load_model(model_path=None):
     if model_path is None:
-        model_path = os.path.join(os.path.dirname(__file__), 'models/serving_model_v0.pth')
+        # model_path = os.path.join(os.path.dirname(__file__), 'models/serving_model_v0.pth')
+        # Update the default model path to match the mountPath in Kubernetes
+        model_path = '/app/models/serving_model_v0.pth'
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
     
     G_Photo2Monet = Generator(img_channels=3).to(device)

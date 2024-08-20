@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webapp-photo2monet
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: webapp-photo2monet
+  template:
+    metadata:
+      labels:
+        app: webapp-photo2monet
+    spec:
+      containers:
+      - name: webapp
+        # image: zcycyrus/photo2monet-dockerhub:webapp_latest
+        image: zcycyrus/photo2monet-dockerhub:local-test
+        ports:
+        - containerPort: 5000
+        volumeMounts:
+        - name: model-volume
+          mountPath: /app/models  # Directory in the container
+      volumes:
+      - name: model-volume
+        persistentVolumeClaim:
+          claimName: model-pvc
