@@ -26,3 +26,4 @@ jobs:
           file: ./webapp/Dockerfile
           push: true
           tags: zcycyrus/photo2monet-dockerhub:webapp_latest
+          no-cache: true  # Force no cache use
